@@ -65,65 +65,121 @@ export default function Home() {
 
         {/* 3. Projects Showcase */}
         <section className="space-y-8" id="projects">
-          <div className="flex justify-between items-end">
-            <h2 className="font-headline-md text-headline-md text-on-surface">Featured Architecture</h2>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+            <div>
+              <h2 className="font-headline-md text-headline-md text-on-surface">Web Development Projects</h2>
+              <p className="font-body-md text-body-md text-on-surface-variant mt-2">Kumpulan tugas mata kuliah pemrograman web, dari HTML dasar hingga integrasi database.</p>
+            </div>
             <div className="hidden md:flex gap-2">
               <button className="btn-ghost px-3 py-1 rounded-full font-label-sm text-label-sm">All</button>
-              <button className="btn-ghost px-3 py-1 rounded-full font-label-sm text-label-sm">Distributed</button>
-              <button className="btn-ghost px-3 py-1 rounded-full font-label-sm text-label-sm">Cloud Native</button>
+              <button className="btn-ghost px-3 py-1 rounded-full font-label-sm text-label-sm">HTML/CSS</button>
+              <button className="btn-ghost px-3 py-1 rounded-full font-label-sm text-label-sm">React/Next.js</button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-gutter">
-            {/* Project Card 1 */}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            {/* Project 1: Amikom Event Hub */}
             <div className="glass-card rounded-xl overflow-hidden flex flex-col">
-              <div className="h-48 w-full bg-surface-container relative">
+              <div className="h-56 w-full bg-surface-container relative">
                 <img 
-                  className="object-cover w-full h-full opacity-80 mix-blend-screen" 
-                  alt="A futuristic 3D visualization" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Hw2ZrNC4yd2HXvgmAF4J0BX6TItEqvuufZTOCL8jSG7KoNqMM9x7POik0sNRVTkmX3EjzayJ0eIneYxVYvXpENRpwmIavXfXCvm8w4GqspAuOWc2F6WvjIJvZckTVXcEYgitWO0_kN3kC8snP5PWPyXWzD-N-QPMSCDuFQPZXOl3okLV9Fn9CvQ2x2hoKIn0vrNtXX0RMuCse2DYNykw-4jpK7oF9qmhL0YufN2SuM6IQ7b2Tb6jKQ"
+                  className="object-cover object-top w-full h-full opacity-90" 
+                  alt="Amikom Event Hub Landing Page" 
+                  src="/images/eventamikom.webp"
                 />
               </div>
               <div className="p-6 flex-grow flex flex-col">
-                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">Nexus Mesh Core</h3>
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="font-headline-md text-headline-md text-on-surface">Amikom Event Hub</h3>
+                </div>
                 <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
-                  A highly available service mesh orchestrator handling 50k RPS with sub-millisecond latency. Built with Go and gRPC.
+                  Platform pemesanan tiket event konser musik dan workshop teknologi, terintegrasi dengan sistem database dan framework modern.
                 </p>
                 <div className="flex gap-4">
-                  <button className="btn-primary flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2">
+                  <a href="https://eventamikom-3373.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
                     <span className="material-symbols-outlined text-[18px]">open_in_new</span>
                     Live Demo
-                  </button>
-                  <button className="btn-ghost flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2">
+                  </a>
+                  <a href="https://github.com/nailahalidya/eventamikom-3373" target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
                     <span className="material-symbols-outlined text-[18px]">code</span>
                     GitHub Repo
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Project Card 2 */}
+            {/* Project 2: Alidya Tour */}
             <div className="glass-card rounded-xl overflow-hidden flex flex-col">
-              <div className="h-48 w-full bg-surface-container relative">
+              <div className="h-56 w-full bg-surface-container relative">
                 <img 
-                  className="object-cover w-full h-full opacity-80 mix-blend-screen" 
-                  alt="Abstract visualization of massive data pipelines" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DqvQMHVIafpTXgKWU79QfFGQuqWtLwvANvom8JTaHpmP0bSYO-Yzh_6_O_-Lg4cJqJ1sCxcSMuSYBdGu-8C1Pv2VccfUNQFdDwpQ_BoVmHFeU1vuACg4AP8SjsOGc8vtmrCc9dB1GtvHZaTJnwtCda1uHmru4RSEsR-XiEyHfcqiHYBrppPaTUvCSNug0zbld-BxBxoQxnqFB01ytv0ScxdLDbgI_maLHU4vlfeVEl6WD9Id_Ozizw"
+                  className="object-cover object-top w-full h-full opacity-90" 
+                  alt="Alidya Tour Landing Page" 
+                  src="/images/alidyatour.webp"
                 />
               </div>
               <div className="p-6 flex-grow flex flex-col">
-                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">Quantum Data Pipeline</h3>
+                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">Alidya Tour & Travel</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
-                  Real-time streaming analytics engine processing terabytes of log data daily using Apache Kafka and Flink.
+                  Website company profile untuk layanan rental mobil lepas kunci dan paket tour liburan di wilayah Yogyakarta. 
                 </p>
                 <div className="flex gap-4">
-                  <button className="btn-primary flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2">
+                  <a href="https://alidyatour.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
                     <span className="material-symbols-outlined text-[18px]">open_in_new</span>
                     Live Demo
-                  </button>
-                  <button className="btn-ghost flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2">
+                  </a>
+                  <a href="https://github.com/nailahalidya/alidyatour" target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
                     <span className="material-symbols-outlined text-[18px]">code</span>
                     GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3: Vetria Pet Care */}
+            <div className="glass-card rounded-xl overflow-hidden flex flex-col">
+              <div className="h-56 w-full bg-surface-container relative">
+                <img 
+                  className="object-cover object-top w-full h-full opacity-90" 
+                  alt="Vetria Pet Care Landing Page" 
+                  src="/images/uaspwlvetria.webp"
+                />
+              </div>
+              <div className="p-6 flex-grow flex flex-col">
+                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">Vetria Pet Care & Shop</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                  Sistem manajemen layanan grooming, konsultasi vet, dan toko aksesoris hewan. (Tugas UAS Pemrograman Web Lanjut).
+                </p>
+                <div className="flex gap-4">
+                  <button disabled className="bg-surface-variant text-outline flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 cursor-not-allowed opacity-50">
+                    <span className="material-symbols-outlined text-[18px]">pending</span>
+                    Belum di-hosting
                   </button>
+                  <a href="https://github.com/nailahalidya/uaspwlvetria" target="_blank" rel="noopener noreferrer" className="btn-ghost flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
+                    <span className="material-symbols-outlined text-[18px]">code</span>
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 4: Justisia */}
+            <div className="glass-card rounded-xl overflow-hidden flex flex-col">
+              <div className="h-56 w-full bg-surface-container relative">
+                <img 
+                  className="object-cover object-top w-full h-full opacity-90" 
+                  alt="Kantor Hukum Kota Justisia" 
+                  src="/images/justisia.webp"
+                />
+              </div>
+              <div className="p-6 flex-grow flex flex-col">
+                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">Kantor Hukum Kota (Justisia)</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                  Landing page profesional untuk biro hukum dan konsultasi legal. Proyek dasar berfokus pada HTML/CSS responsif.
+                </p>
+                <div className="flex gap-4">
+                  <a href="https://jazzy-kelpie-dc3be7.netlify.app" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 text-center">
+                    <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                    Live Demo
+                  </a>
                 </div>
               </div>
             </div>
