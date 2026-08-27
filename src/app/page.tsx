@@ -239,87 +239,97 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right: Certificates */}
-          <div className="space-y-8">
-            <h2 className="font-headline-md text-headline-md text-on-surface">Sertifikat</h2>
-            <div className="space-y-4">
+          {/* Right: Certificates Gallery */}
+          <div className="md:col-span-2 space-y-8 mt-12 md:mt-0">
+            <div className="flex items-center justify-between">
+              <h2 className="font-headline-md text-headline-md text-on-surface">Sertifikat</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <a href="/asset-baru/Anggota humas pimaposma 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 1 */}
+              <a href="/asset-baru/Anggota humas pimaposma 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  {/* Placeholder image (replace src when images are ready) */}
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Anggota Humas</h4>
-                  <p className="font-label-sm text-label-sm text-outline">PIMAPOSMA 2025</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Anggota Humas</h4>
+                  <p className="font-body-sm text-body-sm text-outline">PIMAPOSMA 2025</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
 
-              <a href="/asset-baru/STaff depertemen aspirasi himasi.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 2 */}
+              <a href="/asset-baru/STaff depertemen aspirasi himasi.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Staff Departemen Aspirasi</h4>
-                  <p className="font-label-sm text-label-sm text-outline">HIMASI</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Staff Departemen Aspirasi</h4>
+                  <p className="font-body-sm text-body-sm text-outline">HIMASI</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
 
-              <a href="/asset-baru/divisi konsum ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 3 */}
+              <a href="/asset-baru/divisi konsum ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Divisi Konsumsi</h4>
-                  <p className="font-label-sm text-label-sm text-outline">PPM</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Divisi Konsumsi</h4>
+                  <p className="font-body-sm text-body-sm text-outline">PPM</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
 
-              <a href="/asset-baru/E Sertifikat Nailah Putri Alidya PIMAPOSMA 2024.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 4 */}
+              <a href="/asset-baru/E Sertifikat Nailah Putri Alidya PIMAPOSMA 2024.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Peserta</h4>
-                  <p className="font-label-sm text-label-sm text-outline">PIMAPOSMA 2024</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Sertifikat Peserta</h4>
+                  <p className="font-body-sm text-body-sm text-outline">PIMAPOSMA 2024</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
               
-              <a href="/asset-baru/[24.12.3373]  E-Sertifikat Launching Gemasi 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 5 */}
+              <a href="/asset-baru/[24.12.3373]  E-Sertifikat Launching Gemasi 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Launching</h4>
-                  <p className="font-label-sm text-label-sm text-outline">GEMASI 2025</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Sertifikat Launching</h4>
+                  <p className="font-body-sm text-body-sm text-outline">GEMASI 2025</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
 
-              <a href="/asset-baru/sertif pserta ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
-                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+              {/* Card 6 */}
+              <a href="/asset-baru/sertif pserta ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border border-outline-variant/30">
+                <div className="h-48 w-full bg-surface-container flex items-center justify-center relative group">
+                  <span className="material-symbols-outlined text-[48px] text-primary/50 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <div className="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm">Buka PDF</span>
+                  </div>
                 </div>
-                <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Peserta</h4>
-                  <p className="font-label-sm text-label-sm text-outline">PPM</p>
+                <div className="p-5 border-t border-outline-variant/30 flex flex-col">
+                  <h4 className="font-headline-sm text-label-lg font-bold text-on-surface uppercase mb-1 line-clamp-2">Sertifikat Peserta</h4>
+                  <p className="font-body-sm text-body-sm text-outline">PPM</p>
                 </div>
-                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                </button>
               </a>
 
             </div>
