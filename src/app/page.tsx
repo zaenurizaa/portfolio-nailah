@@ -241,32 +241,87 @@ export default function Home() {
 
           {/* Right: Certificates */}
           <div className="space-y-8">
-            <h2 className="font-headline-md text-headline-md text-on-surface">Credentials</h2>
+            <h2 className="font-headline-md text-headline-md text-on-surface">Sertifikat</h2>
             <div className="space-y-4">
-              <div className="glass-card rounded-lg p-5 flex items-center gap-4">
+              
+              <a href="/asset-baru/Anggota humas pimaposma 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
                 <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">cloud_done</span>
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
                 </div>
                 <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">AWS Certified Solutions Architect - Pro</h4>
-                  <p className="font-label-sm text-label-sm text-outline">Amazon Web Services • 2023</p>
+                  <h4 className="font-label-md text-label-md text-on-surface">Anggota Humas</h4>
+                  <p className="font-label-sm text-label-sm text-outline">PIMAPOSMA 2025</p>
                 </div>
                 <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">verified</span>
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
                 </button>
-              </div>
-              <div className="glass-card rounded-lg p-5 flex items-center gap-4">
+              </a>
+
+              <a href="/asset-baru/STaff depertemen aspirasi himasi.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
                 <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
-                  <span className="material-symbols-outlined text-primary text-[24px]">developer_board</span>
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
                 </div>
                 <div className="flex-grow">
-                  <h4 className="font-label-md text-label-md text-on-surface">Certified Kubernetes Administrator (CKA)</h4>
-                  <p className="font-label-sm text-label-sm text-outline">Cloud Native Computing Foundation • 2022</p>
+                  <h4 className="font-label-md text-label-md text-on-surface">Staff Departemen Aspirasi</h4>
+                  <p className="font-label-sm text-label-sm text-outline">HIMASI</p>
                 </div>
                 <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
-                  <span className="material-symbols-outlined text-[20px]">verified</span>
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
                 </button>
-              </div>
+              </a>
+
+              <a href="/asset-baru/divisi konsum ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-label-md text-label-md text-on-surface">Divisi Konsumsi</h4>
+                  <p className="font-label-sm text-label-sm text-outline">PPM</p>
+                </div>
+                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+                </button>
+              </a>
+
+              <a href="/asset-baru/E Sertifikat Nailah Putri Alidya PIMAPOSMA 2024.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Peserta</h4>
+                  <p className="font-label-sm text-label-sm text-outline">PIMAPOSMA 2024</p>
+                </div>
+                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+                </button>
+              </a>
+              
+              <a href="/asset-baru/[24.12.3373]  E-Sertifikat Launching Gemasi 2025.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Launching</h4>
+                  <p className="font-label-sm text-label-sm text-outline">GEMASI 2025</p>
+                </div>
+                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+                </button>
+              </a>
+
+              <a href="/asset-baru/sertif pserta ppm.pdf" target="_blank" rel="noopener noreferrer" className="glass-card rounded-lg p-5 flex items-center gap-4 block hover:-translate-y-1 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 border border-outline-variant/30">
+                  <span className="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+                </div>
+                <div className="flex-grow">
+                  <h4 className="font-label-md text-label-md text-on-surface">Sertifikat Peserta</h4>
+                  <p className="font-label-sm text-label-sm text-outline">PPM</p>
+                </div>
+                <button className="btn-ghost p-2 rounded-md hover:bg-primary/10">
+                  <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+                </button>
+              </a>
+
             </div>
           </div>
         </section>
