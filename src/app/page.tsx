@@ -11,11 +11,10 @@ export default function Home() {
       const sections = document.querySelectorAll("section[id]");
       let currentSection = "hero";
       
-      // Calculate which section is currently most visible
       sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        // If the section is near the top of the viewport (with an offset for the navbar)
-        if (sectionTop <= 200) {
+        const rect = section.getBoundingClientRect();
+        // If the section top is above 1/3 of the viewport, it is considered active
+        if (rect.top <= window.innerHeight / 3) {
           currentSection = section.id;
         }
       });
@@ -23,8 +22,7 @@ export default function Home() {
       setActiveSection(currentSection);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    // Trigger once on mount
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
     return () => {
@@ -33,8 +31,8 @@ export default function Home() {
   }, []);
 
   const navLinks = [
-    { id: "projects", label: "Projects" },
     { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
     { id: "experience", label: "Certificates" },
   ];
 
