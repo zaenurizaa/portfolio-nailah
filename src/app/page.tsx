@@ -7,22 +7,28 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: "-30% 0px -70% 0px" }
-    );
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let currentSection = "hero";
+      
+      // Calculate which section is currently most visible
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        // If the section is near the top of the viewport (with an offset for the navbar)
+        if (sectionTop <= 200) {
+          currentSection = section.id;
+        }
+      });
+      
+      setActiveSection(currentSection);
+    };
 
-    const sections = document.querySelectorAll("section[id]");
-    sections.forEach((section) => observer.observe(section));
+    window.addEventListener("scroll", handleScroll);
+    // Trigger once on mount
+    handleScroll();
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
