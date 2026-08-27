@@ -154,11 +154,6 @@ export default function Home() {
             <div>
               <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Web Development Projects</h2>
             </div>
-            <div className="flex flex-wrap gap-2 w-full md:w-auto">
-              <button className="btn-secondary border-[var(--color-volt-lime)] text-[var(--color-volt-lime)] flex-1 md:flex-none">All</button>
-              <button className="btn-ghost flex-1 md:flex-none">HTML/CSS</button>
-              <button className="btn-ghost flex-1 md:flex-none">React/Next</button>
-            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
