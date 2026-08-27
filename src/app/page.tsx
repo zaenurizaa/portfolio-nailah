@@ -173,7 +173,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://eventamikom-3373.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Demo Langsung
+                    Live Project
                   </a>
                   <a href="https://github.com/nailahalidya/eventamikom-3373" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
                     Repositori GitHub
@@ -198,7 +198,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://alidyatour.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Demo Langsung
+                    Live Project
                   </a>
                   <a href="https://github.com/nailahalidya/alidyatour" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
                     Repositori GitHub
@@ -248,7 +248,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://jazzy-kelpie-dc3be7.netlify.app" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Demo Langsung
+                    Live Project
                   </a>
                 </div>
               </div>
