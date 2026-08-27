@@ -1,116 +1,123 @@
 @import "tailwindcss";
 
 @theme {
-  /* Core Origami Colors */
-  --color-primary: #FAFAFA;
-  --color-secondary: #B0B0B0;
-  --color-tertiary: #1A1A1A;
-  --color-neutral: #FF6B6B;
-  --color-surface: #87CEEB;
-  --color-accent: #A8D5BA;
+  /* Arcade Night Tokens */
+  --color-primary: #eef0e6;
+  --color-secondary: #8a8f80;
+  --color-tertiary: #eef0e6;
+  --color-neutral: #11120f;
+  --color-surface: #0a0b08;
   
-  --color-paper-white: #FAFAFA;
-  --color-fold-shadow: #B0B0B0;
-  --color-ink-black: #1A1A1A;
-  --color-accent-coral: #FF6B6B;
-  --color-sky-fold: #87CEEB;
-  --color-sage-paper: #A8D5BA;
-  --color-warm-crease: #F0C987;
-  --color-steel-grey: #4A4A4A;
+  --color-bone: #eef0e6;
+  --color-volt-lime: #c8ff3a;
+  --color-live-red: #ff3b3b;
+  --color-surface-lift: #11120f;
 
-  /* Tailwind Standard Mappings (Mapped to Origami for backwards compatibility) */
-  --color-background: #FAFAFA;
-  --color-on-background: #1A1A1A;
-  --color-surface-container: #FFFFFF;
-  --color-on-surface: #1A1A1A;
-  --color-on-surface-variant: #4A4A4A;
-  --color-outline: #B0B0B0;
-  --color-outline-variant: #E5E7EB;
+  /* Tailwind Standard Mappings for compatibility */
+  --color-background: #0a0b08;
+  --color-on-background: #eef0e6;
+  --color-surface-container: #11120f;
+  --color-on-surface: #eef0e6;
+  --color-on-surface-variant: rgba(238,240,230,0.6);
+  --color-outline: rgba(238,240,230,0.06);
 
   /* Typography */
-  --font-display: 'Poppins', sans-serif;
-  --font-body: 'Poppins', sans-serif;
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-body: 'JetBrains Mono', monospace;
   --font-mono: 'JetBrains Mono', monospace;
-  
-  /* Retain specific font sizes if used */
-  --text-headline-md: 24px;
-  --text-headline-lg-mobile: 32px;
-  --text-display: 64px;
-  --text-label-md: 14px;
 }
 
-/* Origami Geométrico Styles */
+/* Arcade Night Global Styles */
 body {
-  background-color: var(--color-paper-white);
-  color: var(--color-ink-black);
+  background-color: var(--color-surface);
+  color: var(--color-bone);
   font-family: var(--font-body);
 }
 
-.origami-card {
-  background-color: var(--color-paper-white);
-  border: 1px solid var(--color-fold-shadow);
+.arcade-card {
+  background-color: var(--color-surface);
+  border: 1px solid rgba(238,240,230,0.06);
   border-radius: 0px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: all 200ms ease-out;
+  box-shadow: none;
+  transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.origami-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: var(--color-steel-grey);
+.arcade-card-featured {
+  border-radius: 2px;
 }
 
+.arcade-card:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 6px 8px 0 0 var(--color-bone);
+}
+
+/* Buttons */
 .btn-primary {
-  background-color: var(--color-accent-coral);
-  color: var(--color-paper-white);
-  border-radius: 0px;
-  padding: 12px 24px;
-  font-weight: 600;
-  transition: all 200ms ease-out;
+  background-color: var(--color-volt-lime);
+  color: var(--color-surface);
   border: none;
+  border-radius: 0px;
+  padding: 12px 22px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .btn-primary:hover {
-  filter: brightness(0.92);
-  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.25);
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 4px 6px 0 0 var(--color-bone);
 }
 
 .btn-primary:active {
-  transform: translateY(1px);
+  transform: translateY(1px) scale(0.96);
+  box-shadow: 1px 2px 0 0 var(--color-bone);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-bone);
+  border: 1px solid rgba(238,240,230,0.18);
+  border-radius: 0px;
+  padding: 12px 22px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 4px 6px 0 0 var(--color-bone);
 }
 
 .btn-ghost {
   background-color: transparent;
-  color: var(--color-ink-black);
-  border: 1.5px solid var(--color-fold-shadow);
+  color: var(--color-secondary);
+  border: none;
   border-radius: 0px;
-  padding: 12px 24px;
+  padding: 12px 18px;
+  font-family: var(--font-mono);
   font-weight: 600;
-  transition: all 200ms ease-out;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  transition: color 200ms ease;
 }
 
 .btn-ghost:hover {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-color: var(--color-ink-black);
+  color: var(--color-bone);
 }
 
-.clip-diagonal {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-}
-
-.crease-line {
-  border-bottom: 1px solid var(--color-fold-shadow);
-  position: relative;
-}
-
-.crease-line::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255,255,255,0.8);
+/* Typography Utilities */
+.label-mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
 }
 
 @media (prefers-reduced-motion: reduce) {
