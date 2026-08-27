@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-[var(--color-surface)]/80 backdrop-blur-xl border-b border-[rgba(238,240,230,0.06)] shadow-sm transition-all duration-300">
         <div className="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
           <div className="font-display text-xl md:text-2xl font-bold text-[var(--color-bone)] tracking-tighter uppercase">
-            PORTFOLIO NAILAH
+            NPA
           </div>
           <div className="hidden md:flex space-x-8">
             <a className="text-[var(--color-volt-lime)] font-bold border-b-2 border-[var(--color-volt-lime)] pb-1 font-body text-sm hover:opacity-80 transition-opacity duration-300 uppercase tracking-widest" href="#projects">Projects</a>
@@ -320,7 +320,7 @@ export default function Home() {
       <footer className="bg-[var(--color-surface)] w-full py-12 border-t border-[rgba(238,240,230,0.06)]">
         <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 max-w-7xl mx-auto gap-6">
           <div className="font-display text-xl font-bold text-[var(--color-bone)] uppercase tracking-tighter">
-            PORTFOLIO NAILAH
+            NPA
           </div>
           <div className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] uppercase tracking-widest">
             © 2026 Web Developer Portfolio. Built with precision.
