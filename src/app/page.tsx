@@ -1,7 +1,37 @@
+"use client";
 import Image from "next/image";
 import Analytics from "@/components/Analytics";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("hero");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-30% 0px -70% 0px" }
+    );
+
+    const sections = document.querySelectorAll("section[id]");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  const navLinks = [
+    { id: "projects", label: "Projects" },
+    { id: "about", label: "About" },
+    { id: "experience", label: "Certificates" },
+  ];
+
   return (
     <>
       {/* TopNavBar */}
@@ -11,10 +41,19 @@ export default function Home() {
             NPA
           </div>
           <div className="hidden md:flex space-x-8">
-            <a className="text-[var(--color-volt-lime)] font-bold border-b-2 border-[var(--color-volt-lime)] pb-1 font-body text-sm hover:opacity-80 transition-opacity duration-300 uppercase tracking-widest" href="#projects">Projects</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#about">About</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#experience">Certificates</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#contact">Contact</a>
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                className={`font-body text-sm uppercase tracking-widest transition-all duration-300 ${
+                  activeSection === link.id
+                    ? "text-[var(--color-volt-lime)] font-bold border-b-2 border-[var(--color-volt-lime)] pb-1"
+                    : "text-[var(--color-secondary)] font-medium hover:text-[var(--color-bone)]"
+                }`}
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
           <div>
             <button className="btn-primary">
