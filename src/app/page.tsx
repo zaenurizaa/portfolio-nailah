@@ -320,7 +320,7 @@ export default function Home() {
               {/* Card 6 */}
               <a href="/asset-baru/sertif pserta ppm.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-ppm.webp" alt="Sertifikat Peserta PPM" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
