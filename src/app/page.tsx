@@ -31,15 +31,15 @@ export default function Home() {
   }, []);
 
   const navLinks = [
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Certificates" },
+    { id: "about", label: "Tentang" },
+    { id: "projects", label: "Proyek" },
+    { id: "experience", label: "Sertifikat" },
   ];
 
   return (
     <>
       {/* TopNavBar */}
-      <nav className="fixed top-0 w-full z-50 bg-[var(--color-surface)]/80 backdrop-blur-xl border-b border-[rgba(238,240,230,0.06)] shadow-sm transition-all duration-300">
+      <nav className="fixed top-0 w-full z-50 bg-[var(--color-surface)]/80 backdrop-blur-xl border-b border-[rgba(238,240,230,0.06)] shadow-sm transition-all duration-300 animate-slide-up">
         <div className="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
           <div className="font-display text-xl md:text-2xl font-bold text-[var(--color-bone)] tracking-tighter uppercase">
             NPA
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div>
             <button className="btn-primary">
-              Hire Me
+              Rekrut Saya
             </button>
           </div>
         </div>
@@ -77,14 +77,14 @@ export default function Home() {
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
             
             {/* Pill Badge (Arcade Night style - sharp edge, uppercase mono) */}
-            <div className="relative z-10">
+            <div className="relative z-10 animate-slide-up delay-100">
               <span className="inline-block border border-[rgba(238,240,230,0.18)] px-4 py-1.5 label-mono text-[var(--color-bone)]">
                 MAHASISWA SISTEM INFORMASI
               </span>
             </div>
 
             {/* Giant Greeting with Inline Photo */}
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 font-display text-[4rem] md:text-[5.5rem] font-bold text-[var(--color-bone)] leading-[0.92] tracking-[-0.02em] uppercase">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 font-display text-[4rem] md:text-[5.5rem] font-bold text-[var(--color-bone)] leading-[0.92] tracking-[-0.02em] uppercase animate-slide-up delay-200">
               <span>Hi,</span>
               <div className="w-32 h-32 md:w-40 md:h-40 relative transform hover:rotate-0 transition-transform duration-320 shadow-none border border-[rgba(238,240,230,0.18)] p-1 bg-[var(--color-surface-lift)]">
                 <img 
@@ -97,17 +97,17 @@ export default function Home() {
             </div>
 
             {/* Description */}
-            <p className="relative z-10 font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] max-w-2xl mx-auto leading-[1.55]">
+            <p className="relative z-10 font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] max-w-2xl mx-auto leading-[1.55] animate-slide-up delay-300">
               Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan website dan aplikasi web dinamis. Saya berfokus pada membangun antarmuka yang responsif, menulis kode yang terstruktur, serta menciptakan pengalaman pengguna yang intuitif.
             </p>
             
             {/* Call to Action */}
-            <div className="relative z-10 pt-4 flex gap-4">
+            <div className="relative z-10 pt-4 flex gap-4 animate-slide-up delay-400">
               <a href="#projects" className="btn-primary flex items-center justify-center gap-2">
-                Lihat Portfolio
+                Lihat Portofolio
               </a>
-              <a href="#contact" className="btn-secondary flex items-center justify-center gap-2">
-                Hubungi Saya
+              <a href="#about" className="btn-secondary flex items-center justify-center gap-2">
+                Jelajahi Profil
               </a>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
         {/* 1.5 About & Skills Section (from user screenshot) */}
         <section className="space-y-8" id="about">
-          <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">About & Skills</h2>
+          <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">Tentang & Keahlian</h2>
           <div className="w-full h-px bg-[rgba(238,240,230,0.06)] mb-8"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -126,7 +126,7 @@ export default function Home() {
                 <span className="font-display text-2xl font-bold text-[var(--color-surface)]">"</span>
               </div>
               <p className="font-body text-[0.9375rem] text-[var(--color-bone)] leading-[1.55]">
-                I am a Web Developer specializing in designing end-to-end digital products. I have deep expertise in the JavaScript ecosystem (React.js) for creating dynamic interfaces, combined with the robustness of PHP, Laravel, and MySQL for scalable system architecture. My main focus is bridging highly functional code with premium UI/UX standards, ensuring every application not only operates flawlessly but also provides a highly intuitive and engaging user experience.
+                Saya adalah Web Developer yang berspesialisasi dalam merancang produk digital terpadu (end-to-end). Saya memiliki keahlian mendalam di ekosistem JavaScript (khususnya React.js) untuk menciptakan antarmuka yang dinamis, dikombinasikan dengan ketangguhan PHP, Laravel, dan MySQL untuk membangun arsitektur sistem yang skalabel. Fokus utama saya adalah menjembatani kode fungsional dengan standar UI/UX premium, memastikan setiap aplikasi tidak hanya beroperasi secara sempurna, tetapi juga memberikan pengalaman pengguna yang sangat intuitif dan memukau.
               </p>
             </div>
             
@@ -150,7 +150,7 @@ export default function Home() {
         <section className="space-y-12 md:space-y-16" id="projects">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-[rgba(238,240,230,0.06)] pb-6">
             <div>
-              <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Web Development Projects</h2>
+              <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Proyek Pengembangan Web</h2>
             </div>
           </div>
           
@@ -173,10 +173,10 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://eventamikom-3373.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Live Demo
+                    Demo Langsung
                   </a>
                   <a href="https://github.com/nailahalidya/eventamikom-3373" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    GitHub Repo
+                    Repositori GitHub
                   </a>
                 </div>
               </div>
@@ -198,10 +198,10 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://alidyatour.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Live Demo
+                    Demo Langsung
                   </a>
                   <a href="https://github.com/nailahalidya/alidyatour" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    GitHub Repo
+                    Repositori GitHub
                   </a>
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function Home() {
                     Belum Hosting
                   </button>
                   <a href="https://github.com/nailahalidya/uaspwlvetria" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    GitHub Repo
+                    Repositori GitHub
                   </a>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <a href="https://jazzy-kelpie-dc3be7.netlify.app" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
-                    Live Demo
+                    Demo Langsung
                   </a>
                 </div>
               </div>
