@@ -321,35 +321,8 @@ export default function Home() {
                 </div>
               </a>
               
-              {/* Card 5 */}
-              <a href="/asset-baru/[24.12.3373]  E-Sertifikat Launching Gemasi 2025.pdf" target="_blank" rel="noopener noreferrer" className="arcade-card group flex flex-col hover:border-[var(--color-volt-lime)] border-[rgba(238,240,230,0.06)]">
-                <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
-                  <img src="/images/cert-gemasi.webp" alt="Sertifikat GEMASI 2025" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
-                  </div>
-                </div>
-                <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Launching GEMASI</h4>
-                  <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">2025</p>
-                </div>
-              </a>
-
-              {/* Card 6 */}
-              <a href="/asset-baru/sertif pserta ppm.pdf" target="_blank" rel="noopener noreferrer" className="arcade-card group flex flex-col hover:border-[var(--color-volt-lime)] border-[rgba(238,240,230,0.06)]">
-                <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
-                  <img src="/images/cert-ppm.webp" alt="Sertifikat Peserta PPM" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
-                  </div>
-                </div>
-                <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Peserta PPM</h4>
-                  <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">2024</p>
-                </div>
-              </a>
-
             </div>
+          </div>
         </section>
       </main>
 
