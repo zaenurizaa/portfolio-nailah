@@ -79,7 +79,7 @@ export default function Home() {
             {/* Pill Badge (Arcade Night style - sharp edge, uppercase mono) */}
             <div className="relative z-10 animate-slide-up delay-100">
               <span className="inline-block border border-[rgba(238,240,230,0.18)] px-4 py-1.5 label-mono text-[var(--color-bone)]">
-                MAHASISWA SISTEM INFORMASI
+                INFORMATION SYSTEMS STUDENT
               </span>
             </div>
 
@@ -98,16 +98,16 @@ export default function Home() {
 
             {/* Description */}
             <p className="relative z-10 font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] max-w-2xl mx-auto leading-[1.55] animate-slide-up delay-300">
-              Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan website dan aplikasi web dinamis. Saya berfokus pada membangun antarmuka yang responsif, menulis kode yang terstruktur, serta menciptakan pengalaman pengguna yang intuitif.
+              I am an Information Systems student with a strong passion for web development and dynamic web applications. I focus on building responsive interfaces, writing structured code, and creating intuitive user experiences.
             </p>
             
             {/* Call to Action */}
             <div className="relative z-10 pt-4 flex gap-4 animate-slide-up delay-400">
               <a href="#projects" className="btn-primary flex items-center justify-center gap-2">
-                Lihat Portofolio
+                View Portfolio
               </a>
               <a href="#about" className="btn-secondary flex items-center justify-center gap-2">
-                Jelajahi Profil
+                About Me
               </a>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
         {/* 1.5 About & Skills Section (from user screenshot) */}
         <section className="space-y-8" id="about">
-          <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">Tentang & Keahlian</h2>
+          <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">About & Skills</h2>
           <div className="w-full h-px bg-[rgba(238,240,230,0.06)] mb-8"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -126,7 +126,7 @@ export default function Home() {
                 <span className="font-display text-2xl font-bold text-[var(--color-surface)]">"</span>
               </div>
               <p className="font-body text-[0.9375rem] text-[var(--color-bone)] leading-[1.55]">
-                Saya adalah Web Developer yang berspesialisasi dalam merancang produk digital terpadu (end-to-end). Saya memiliki keahlian mendalam di ekosistem JavaScript (khususnya React.js) untuk menciptakan antarmuka yang dinamis, dikombinasikan dengan ketangguhan PHP, Laravel, dan MySQL untuk membangun arsitektur sistem yang skalabel. Fokus utama saya adalah menjembatani kode fungsional dengan standar UI/UX premium, memastikan setiap aplikasi tidak hanya beroperasi secara sempurna, tetapi juga memberikan pengalaman pengguna yang sangat intuitif dan memukau.
+                I am a Web Developer specializing in designing end-to-end digital products. I have deep expertise in the JavaScript ecosystem (React.js) for creating dynamic interfaces, combined with the robustness of PHP, Laravel, and MySQL for scalable system architecture. My main focus is bridging highly functional code with premium UI/UX standards, ensuring every application not only operates flawlessly but also provides a highly intuitive and engaging user experience.
               </p>
             </div>
             
@@ -150,7 +150,7 @@ export default function Home() {
         <section className="space-y-12 md:space-y-16" id="projects">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-[rgba(238,240,230,0.06)] pb-6">
             <div>
-              <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Proyek Pengembangan Web</h2>
+              <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Web Development Projects</h2>
             </div>
           </div>
           
@@ -169,14 +169,14 @@ export default function Home() {
                   <h3 className="font-display text-[1.875rem] text-[var(--color-bone)] uppercase leading-[1.15] tracking-tight">Amikom Event Hub</h3>
                 </div>
                 <p className="font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] flex-grow mb-8 leading-[1.55]">
-                  Platform pemesanan tiket event konser musik dan workshop teknologi, terintegrasi dengan sistem database dan framework modern.
+                  Ticketing platform for music concerts and technology workshops, integrated with a database system and modern framework.
                 </p>
                 <div className="flex gap-4">
                   <a href="https://eventamikom-3373.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
                     Live Project
                   </a>
                   <a href="https://github.com/nailahalidya/eventamikom-3373" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    Repositori GitHub
+                    GitHub Repo
                   </a>
                 </div>
               </div>
@@ -194,14 +194,14 @@ export default function Home() {
               <div className="p-6 md:p-8 flex-grow flex flex-col bg-[var(--color-surface)]">
                 <h3 className="font-display text-[1.875rem] text-[var(--color-bone)] uppercase leading-[1.15] tracking-tight mb-2">Alidya Tour & Travel</h3>
                 <p className="font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] flex-grow mb-8 leading-[1.55]">
-                  Website company profile untuk layanan rental mobil lepas kunci dan paket tour liburan di wilayah Yogyakarta. 
+                  Company profile website for car rental services and holiday tour packages in the Yogyakarta area.
                 </p>
                 <div className="flex gap-4">
                   <a href="https://alidyatour.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
                     Live Project
                   </a>
                   <a href="https://github.com/nailahalidya/alidyatour" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    Repositori GitHub
+                    GitHub Repo
                   </a>
                 </div>
               </div>
@@ -219,14 +219,14 @@ export default function Home() {
               <div className="p-6 md:p-8 flex-grow flex flex-col bg-[var(--color-surface)]">
                 <h3 className="font-display text-[1.875rem] text-[var(--color-bone)] uppercase leading-[1.15] tracking-tight mb-2">Vetria Pet Care & Shop</h3>
                 <p className="font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] flex-grow mb-8 leading-[1.55]">
-                  Sistem manajemen layanan grooming, konsultasi vet, dan toko aksesoris hewan. (Tugas UAS Pemrograman Web Lanjut).
+                  Management system for grooming services, vet consultations, and pet accessories store.
                 </p>
                 <div className="flex gap-4">
                   <button disabled className="bg-transparent border border-[rgba(238,240,230,0.1)] text-[rgba(238,240,230,0.4)] flex-1 text-center font-mono text-[13px] uppercase tracking-widest cursor-not-allowed">
-                    Belum Hosting
+                    Not Hosted
                   </button>
                   <a href="https://github.com/nailahalidya/uaspwlvetria" target="_blank" rel="noopener noreferrer" className="btn-secondary flex-1 text-center">
-                    Repositori GitHub
+                    GitHub Repo
                   </a>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default function Home() {
               <div className="p-6 md:p-8 flex-grow flex flex-col bg-[var(--color-surface)]">
                 <h3 className="font-display text-[1.875rem] text-[var(--color-bone)] uppercase leading-[1.15] tracking-tight mb-2">Kantor Hukum Kota (Justisia)</h3>
                 <p className="font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] flex-grow mb-8 leading-[1.55]">
-                  Landing page profesional untuk biro hukum dan konsultasi legal. Proyek dasar berfokus pada HTML/CSS responsif.
+                  Professional landing page for a law firm and legal consulting. Foundational project focusing on responsive HTML/CSS.
                 </p>
                 <div className="flex gap-4">
                   <a href="https://jazzy-kelpie-dc3be7.netlify.app" target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 text-center">
@@ -259,7 +259,7 @@ export default function Home() {
         {/* 4. Certificates Gallery */}
         <section className="space-y-12 md:space-y-16" id="experience">
           <div className="flex items-center justify-between border-b border-[rgba(238,240,230,0.06)] pb-6">
-            <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Sertifikat & Pencapaian</h2>
+            <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Certificates & Achievements</h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
@@ -269,11 +269,11 @@ export default function Home() {
                 <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
                   <img src="/images/cert-humas.webp" alt="Sertifikat Anggota Humas" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
+                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">View PDF</span>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Anggota Humas</h4>
+                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Public Relations</h4>
                   <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">PIMAPOSMA 2025</p>
                 </div>
               </a>
@@ -283,11 +283,11 @@ export default function Home() {
                 <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
                   <img src="/images/cert-aspirasi.webp" alt="Sertifikat Staff Aspirasi" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
+                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">View PDF</span>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Staff Aspirasi</h4>
+                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Aspiration Staff</h4>
                   <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">HIMASI</p>
                 </div>
               </a>
@@ -297,11 +297,11 @@ export default function Home() {
                 <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
                   <img src="/images/cert-konsumsi.webp" alt="Sertifikat Divisi Konsumsi" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
+                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">View PDF</span>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Divisi Konsumsi</h4>
+                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Consumption Division</h4>
                   <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">PPM</p>
                 </div>
               </a>
@@ -311,11 +311,11 @@ export default function Home() {
                 <div className="aspect-[3/4] w-full bg-[var(--color-surface-lift)] flex items-center justify-center relative overflow-hidden border-b border-[rgba(238,240,230,0.06)]">
                   <img src="/images/cert-pimaposma24.webp" alt="Sertifikat PIMAPOSMA 2024" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-320 grayscale-[20%] group-hover:grayscale-0" />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-320">
-                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">Lihat PDF</span>
+                    <span className="bg-[var(--color-volt-lime)] text-[var(--color-surface)] px-4 py-2 font-mono text-[12px] font-bold uppercase tracking-widest">View PDF</span>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col bg-[var(--color-surface)]">
-                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">Peserta PIMAPOSMA</h4>
+                  <h4 className="font-mono text-[13px] font-bold text-[var(--color-bone)] uppercase tracking-widest mb-1 truncate">PIMAPOSMA Participant</h4>
                   <p className="font-mono text-[11px] text-[rgba(238,240,230,0.6)]">2024</p>
                 </div>
               </a>
