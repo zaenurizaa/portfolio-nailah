@@ -338,7 +338,7 @@ export default function Home() {
             NPA
           </div>
           <div className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] uppercase tracking-widest">
-            © 2026 Web Developer Portfolio. Built with precision.
+            © 2026 NAILAH PUTRI ALIDYA.
           </div>
           <div className="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-0">
             <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="https://www.linkedin.com/in/nailah-putri-alidya-42576a3b4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
