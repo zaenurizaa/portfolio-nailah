@@ -12,9 +12,9 @@ export default function Home() {
           </div>
           <div className="hidden md:flex space-x-8">
             <a className="text-[var(--color-volt-lime)] font-bold border-b-2 border-[var(--color-volt-lime)] pb-1 font-body text-sm hover:opacity-80 transition-opacity duration-300 uppercase tracking-widest" href="#projects">Projects</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] transition-colors duration-300 uppercase tracking-widest" href="#about">About</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] transition-colors duration-300 uppercase tracking-widest" href="#experience">Certificates</a>
-            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] transition-colors duration-300 uppercase tracking-widest" href="#contact">Contact</a>
+            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#about">About</a>
+            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#experience">Certificates</a>
+            <a className="text-[var(--color-secondary)] font-medium font-body text-sm hover:text-[var(--color-bone)] active:text-[var(--color-volt-lime)] focus:text-[var(--color-volt-lime)] transition-colors duration-300 uppercase tracking-widest" href="#contact">Contact</a>
           </div>
           <div>
             <button className="btn-primary">
@@ -25,7 +25,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content Canvas */}
-      <main className="flex-grow pt-[100px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full space-y-32">
+      <main className="flex-grow pt-[120px] pb-32 px-6 md:px-12 max-w-7xl mx-auto w-full space-y-32 md:space-y-48">
         
         {/* 1. Hero Section */}
         <section className="relative w-full flex items-center justify-center pt-8" id="hero">
@@ -104,20 +104,19 @@ export default function Home() {
         </section>
 
         {/* 3. Projects Showcase */}
-        <section className="space-y-12" id="projects">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-[rgba(238,240,230,0.06)] pb-4">
+        <section className="space-y-12 md:space-y-16" id="projects">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-[rgba(238,240,230,0.06)] pb-6">
             <div>
-              <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">Web Development Projects</h2>
-              <p className="font-body text-[0.9375rem] text-[rgba(238,240,230,0.6)] mt-2">Kumpulan tugas mata kuliah pemrograman web, dari HTML dasar hingga integrasi database.</p>
+              <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Web Development Projects</h2>
             </div>
-            <div className="hidden md:flex gap-2">
-              <button className="btn-secondary border-[var(--color-volt-lime)] text-[var(--color-volt-lime)]">All</button>
-              <button className="btn-ghost">HTML/CSS</button>
-              <button className="btn-ghost">React/Next.js</button>
+            <div className="flex flex-wrap gap-2 w-full md:w-auto">
+              <button className="btn-secondary border-[var(--color-volt-lime)] text-[var(--color-volt-lime)] flex-1 md:flex-none">All</button>
+              <button className="btn-ghost flex-1 md:flex-none">HTML/CSS</button>
+              <button className="btn-ghost flex-1 md:flex-none">React/Next</button>
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Project 1: Amikom Event Hub */}
             <div className="arcade-card overflow-hidden flex flex-col h-full">
               <div className="h-72 w-full bg-[#11120f] relative border-b border-[rgba(238,240,230,0.06)]">
@@ -220,12 +219,12 @@ export default function Home() {
         </section>
 
         {/* 4. Certificates Gallery */}
-        <section className="space-y-12" id="experience">
-          <div className="flex items-center justify-between border-b border-[rgba(238,240,230,0.06)] pb-4">
-            <h2 className="font-display text-[3rem] font-bold text-[var(--color-bone)] uppercase tracking-tight">Sertifikat & Pencapaian</h2>
+        <section className="space-y-12 md:space-y-16" id="experience">
+          <div className="flex items-center justify-between border-b border-[rgba(238,240,230,0.06)] pb-6">
+            <h2 className="font-display text-[2.5rem] md:text-[3.5rem] font-bold text-[var(--color-bone)] uppercase tracking-tight leading-none">Sertifikat & Pencapaian</h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
               
               {/* Card 1 */}
               <a href="/asset-baru/Anggota humas pimaposma 2025.pdf" target="_blank" rel="noopener noreferrer" className="arcade-card group flex flex-col hover:border-[var(--color-volt-lime)] border-[rgba(238,240,230,0.06)]">
@@ -324,11 +323,11 @@ export default function Home() {
           <div className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] uppercase tracking-widest">
             © 2026 Web Developer Portfolio. Built with precision.
           </div>
-          <div className="flex gap-4">
-            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="#">LinkedIn</a>
-            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="#">GitHub</a>
-            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="#">Twitter</a>
-            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="#">Resume</a>
+          <div className="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-0">
+            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="https://www.linkedin.com/in/nailah-putri-alidya-42576a3b4" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="https://github.com/nailahalidya" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="https://www.instagram.com/nailahald?igsi=MTJmaHZmbXN4dTd5YQ==" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a className="font-mono text-[12px] text-[rgba(238,240,230,0.6)] hover:text-[var(--color-volt-lime)] transition-colors duration-200 uppercase tracking-widest" href="mailto:nailah.alidya0907@gmail.com">Email</a>
           </div>
         </div>
       </footer>
