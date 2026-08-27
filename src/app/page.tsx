@@ -5,20 +5,20 @@ export default function Home() {
   return (
     <>
       {/* TopNavBar */}
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm">
-        <div className="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
-          <div className="font-display text-headline-md font-bold text-primary tracking-tighter">
+      <nav className="fixed top-0 w-full z-50 bg-[var(--color-paper-white)]/80 backdrop-blur-xl border-b border-[var(--color-fold-shadow)] shadow-sm transition-all duration-300">
+        <div className="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
+          <div className="font-display text-xl md:text-2xl font-bold text-[var(--color-ink-black)] tracking-tighter">
             ARCHITECT.IO
           </div>
-          <div className="hidden md:flex space-x-6">
-            <a className="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#projects">Projects</a>
-            <a className="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#experience">Experience</a>
-            <a className="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#analytics-section">Analytics</a>
-            <a className="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#notes">Notes</a>
-            <a className="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+          <div className="hidden md:flex space-x-8">
+            <a className="text-[var(--color-ink-black)] font-bold border-b-2 border-[var(--color-ink-black)] pb-1 font-body text-sm hover:opacity-80 transition-opacity duration-300" href="#projects">Projects</a>
+            <a className="text-[var(--color-steel-grey)] font-medium font-body text-sm hover:text-[var(--color-ink-black)] transition-colors duration-300" href="#experience">Experience</a>
+            <a className="text-[var(--color-steel-grey)] font-medium font-body text-sm hover:text-[var(--color-ink-black)] transition-colors duration-300" href="#analytics-section">Analytics</a>
+            <a className="text-[var(--color-steel-grey)] font-medium font-body text-sm hover:text-[var(--color-ink-black)] transition-colors duration-300" href="#notes">Notes</a>
+            <a className="text-[var(--color-steel-grey)] font-medium font-body text-sm hover:text-[var(--color-ink-black)] transition-colors duration-300" href="#contact">Contact</a>
           </div>
           <div>
-            <button className="btn-primary font-label-md text-label-md px-4 py-2 rounded-lg hover:scale-95 transition-transform duration-200">
+            <button className="btn-primary font-body text-sm px-5 py-2 hover:scale-[0.98] transition-transform duration-200">
               Hire Me
             </button>
           </div>
@@ -27,35 +27,46 @@ export default function Home() {
 
       {/* Main Content Canvas */}
       <main className="flex-grow pt-[100px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full space-y-32">
+        
         {/* 1. Hero Section */}
-        <section className="relative min-h-[614px] flex items-center justify-center" id="hero">
-          <div className="absolute inset-0 overflow-hidden -z-10 rounded-3xl opacity-20">
-            <div 
-              className="bg-cover bg-center w-full h-full" 
-              style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOwMyADl1BF574H-8bkLGvwOhM-4jAbkOXxtTPf0EfZwNmahSjZk8irEuAg8UbH-8h5undv4oBs62eX5vKdjGxf7AUAs4O62r_1ec2o-LvIuNSobWS0Q2GTXRxsvgNP2O2rPbYbMpLWrZf25iJ3a278EMGvRkExzUEdMvgHUeP5jUDVhcgx3OOcqV6XYAA9OykB3S77f3KL2gqHPdeyqszLrWmAT94SBQIpEME24x6-bp92WJ3qIXiKg')" }}
-            ></div>
-          </div>
-          <div className="glass-card rounded-2xl p-8 md:p-12 max-w-3xl text-center space-y-6">
-            <img 
-              alt="Professional headshot of a software engineer" 
-              className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-surface-container-highest shadow-lg mb-4" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCghakWYUAuKgzcLBCpHeg4Xzq-q8maDwqpS1yZgAUpxlLhd8sxeNwaltGHhaDbqMds6MiRwCl4xKj1CH2OmXAWdV1NYagQxrqHHGTvHk7VUkhv__x9m348tIH0ehJILVKzOD_9ufkeSR4pERj01uE6SaHioaORLitEl2We44Pfkfy40ZESeHk6H7ibLEufQkqEny5816eWb-UVZFrqutADG5HF2u_Z-aDIKr56FAEGa34so--Wf2qJCA"
-            />
-            <h1 className="font-display text-headline-lg-mobile md:text-display text-primary">
-              Principal Systems Engineer
-            </h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant">
-              Architecting scalable, resilient distributed systems. Over 15 years bridging the gap between high-level architectural vision and concrete technical implementation.
+        <section className="relative w-full flex items-center justify-center pt-8" id="hero">
+          <div className="origami-card w-full p-8 md:p-20 flex flex-col items-center justify-center text-center space-y-10 min-h-[500px] relative overflow-hidden">
+            {/* Background Dots Pattern for texture (Origami tessellation hint) */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#1A1A1A 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+            
+            {/* Pill Badge (Sharp variant) */}
+            <div className="relative z-10">
+              <span className="inline-block border border-[var(--color-fold-shadow)] px-4 py-1.5 text-xs font-semibold tracking-widest text-[var(--color-steel-grey)] uppercase bg-white">
+                Mahasiswa Sistem Informasi
+              </span>
+            </div>
+
+            {/* Giant Greeting with Inline Photo */}
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 font-display text-[3.5rem] md:text-[6rem] font-bold text-[var(--color-ink-black)] leading-tight tracking-tight">
+              <span>Hi,</span>
+              <div className="w-32 h-32 md:w-40 md:h-40 relative transform rotate-3 hover:rotate-0 transition-transform duration-300 shadow-md border border-[var(--color-fold-shadow)] p-1 bg-white">
+                <img 
+                  src="/images/nailah.webp" 
+                  alt="Nailah Putri Alidya" 
+                  className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+              <span>I'm Nailah!</span>
+            </div>
+
+            {/* Description */}
+            <p className="relative z-10 font-body text-base md:text-lg text-[var(--color-steel-grey)] max-w-3xl mx-auto leading-relaxed">
+              Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan website dan aplikasi web dinamis. Saya berfokus pada membangun antarmuka yang responsif, menulis kode yang terstruktur, serta menciptakan pengalaman pengguna yang intuitif. Portfolio ini mendokumentasikan berbagai project dan eksperimen yang saya kerjakan selama mempelajari Pemrograman Web Lanjut, menggunakan HTML, CSS, JavaScript, MySQL, dan Laravel.
             </p>
-            <div className="flex justify-center gap-4 pt-4">
-              <button className="btn-primary font-label-md text-label-md px-6 py-3 rounded-lg flex items-center gap-2">
-                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>terminal</span>
-                View Projects
-              </button>
-              <button className="btn-ghost font-label-md text-label-md px-6 py-3 rounded-lg flex items-center gap-2">
-                <span className="material-symbols-outlined">description</span>
-                Resume
-              </button>
+            
+            {/* Call to Action */}
+            <div className="relative z-10 pt-4 flex gap-4">
+              <a href="#projects" className="btn-primary flex items-center gap-2">
+                Lihat Portfolio
+              </a>
+              <a href="#contact" className="btn-ghost flex items-center gap-2">
+                Hubungi Saya
+              </a>
             </div>
           </div>
         </section>
