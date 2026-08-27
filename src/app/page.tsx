@@ -31,9 +31,9 @@ export default function Home() {
   }, []);
 
   const navLinks = [
-    { id: "about", label: "Tentang" },
-    { id: "projects", label: "Proyek" },
-    { id: "experience", label: "Sertifikat" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Certificates" },
   ];
 
   return (
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div>
             <button className="btn-primary">
-              Rekrut Saya
+              Hire Me
             </button>
           </div>
         </div>
