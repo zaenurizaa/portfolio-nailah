@@ -250,7 +250,7 @@ export default function Home() {
               {/* Card 1 */}
               <a href="/asset-baru/Anggota humas pimaposma 2025.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-humas.webp" alt="Sertifikat Anggota Humas" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
@@ -264,7 +264,7 @@ export default function Home() {
               {/* Card 2 */}
               <a href="/asset-baru/STaff depertemen aspirasi himasi.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-aspirasi.webp" alt="Sertifikat Staff Aspirasi" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
@@ -278,7 +278,7 @@ export default function Home() {
               {/* Card 3 */}
               <a href="/asset-baru/divisi konsum ppm.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-konsumsi.webp" alt="Sertifikat Divisi Konsumsi" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
@@ -292,7 +292,7 @@ export default function Home() {
               {/* Card 4 */}
               <a href="/asset-baru/E Sertifikat Nailah Putri Alidya PIMAPOSMA 2024.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-pimaposma24.webp" alt="Sertifikat PIMAPOSMA 2024" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
@@ -306,7 +306,7 @@ export default function Home() {
               {/* Card 5 */}
               <a href="/asset-baru/[24.12.3373]  E-Sertifikat Launching Gemasi 2025.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform border-2 border-[#121212]">
                 <div className="h-48 w-full bg-gray-100 flex items-center justify-center relative group">
-                  <span className="material-symbols-outlined text-[48px] text-gray-400 group-hover:scale-110 transition-transform">picture_as_pdf</span>
+                  <img src="/images/cert-gemasi.webp" alt="Sertifikat GEMASI 2025" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className="bg-black text-white px-4 py-2 rounded-full font-label-sm shadow-md">Buka PDF</span>
                   </div>
